@@ -1,0 +1,45 @@
+// Place all the styles related to the pieces controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.page-header {
+  height: 50px;
+  background-color: #2C3E4F;
+  color: #FAFCFE;
+  text-align:center;
+  h1 {
+    line-height: 50px;
+  }
+}
+#list {
+  .home {
+    height: 50px;
+    width:40px;
+    color: #FAFCFE;
+    background-color: #28A085;
+    text-align:center;
+    float: right;
+    clear: left;
+    span {
+      font-size: 1.6em;
+      text-align:center;
+      line-height: 50px;
+    }
+  }
+  .back{
+    height: 50px;
+    width:40px;
+    color: #FAFCFE;
+    background-color: #800700;
+    text-align:center;
+    float: right;
+    clear: right;
+    span {
+      font-size: 1.6em;
+      text-align:center;
+      line-height: 50px;
+    }
+  }
+  .col-xs-6 col-md-3 {
+
+  }
+}
