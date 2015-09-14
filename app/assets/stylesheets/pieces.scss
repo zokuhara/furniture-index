@@ -6,40 +6,55 @@
   background-color: #2C3E4F;
   color: #FAFCFE;
   text-align:center;
+  font-family: 'Alegreya', serif;
   h1 {
     line-height: 50px;
+    font-size: 25px;
+    font-weight: 600;
   }
 }
 #list {
-  .home {
-    height: 50px;
-    width:40px;
-    color: #FAFCFE;
-    background-color: #28A085;
+  .row {
+    width: 80%;
+  }
+}
+.home {
+  height: 50px;
+  width:40px;
+  color: #FAFCFE;
+  background-color: #28A085;
+  text-align:center;
+  float: right;
+  clear: left;
+  span {
+    font-size: 1.6em;
     text-align:center;
+    line-height: 50px;
+  }
+}
+.back{
+  height: 50px;
+  width:40px;
+  color: #FAFCFE;
+  background-color: #800700;
+  text-align:center;
+  float: right;
+  clear: right;
+  span {
+    font-size: 1.6em;
+    text-align:center;
+    line-height: 50px;
+  }
+}
+#detail {
+  color: #111111;
+  .info {
+    width: 250px;
     float: right;
     clear: left;
-    span {
-      font-size: 1.6em;
-      text-align:center;
-      line-height: 50px;
-    }
   }
-  .back{
-    height: 50px;
-    width:40px;
-    color: #FAFCFE;
-    background-color: #800700;
-    text-align:center;
-    float: right;
-    clear: right;
-    span {
-      font-size: 1.6em;
-      text-align:center;
-      line-height: 50px;
-    }
-  }
-  .col-xs-6 col-md-3 {
-
+  img {
+    width: 550px;
+    float: left;
   }
 }

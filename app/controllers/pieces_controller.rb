@@ -7,7 +7,7 @@ class PiecesController < ApplicationController
 
   def detail
     @pieces =fetch_pieces
-    @piece = @pieces.find {|p| p.id == params[:pid].to_i}
+    @piece = @pieces.find {|p| p.pid.to_i == params[:pid].to_i}
   end
 
   def fetch_pieces
@@ -33,5 +33,15 @@ class PiecesController < ApplicationController
 
     end
     @pieces
+  end
+
+  def clearance_discount(condition)
+    @pieces.each do |piece|
+      if piece.condition == "good"
+        return 0.90
+      elsif piece.condition == "average"
+        return 0.80
+      end
+    end
   end
 end
