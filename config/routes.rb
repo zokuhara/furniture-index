@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
-  # get 'pieces/list'
-  root 'pieces#list'
+  # get 'pieces/home'
+  root 'pieces#home'
 
   get 'pieces/:pid' => 'pieces#detail'
+  get 'list' => 'pieces#list'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

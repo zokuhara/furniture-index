@@ -1,6 +1,7 @@
 // Place all the styles related to the pieces controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
 .page-header {
   height: 50px;
   background-color: #2C3E4F;
@@ -14,11 +15,14 @@
   }
 }
 #list {
-  .row {
-    width: 80%;
+  .cell {
+    height: 550px;
+    .sale {
+      background-color: #F1C40F;
+    }
   }
 }
-.home {
+.home-button {
   height: 50px;
   width:40px;
   color: #FAFCFE;
@@ -32,7 +36,7 @@
     line-height: 50px;
   }
 }
-.back{
+.back-button {
   height: 50px;
   width:40px;
   color: #FAFCFE;
@@ -46,15 +50,45 @@
     line-height: 50px;
   }
 }
+#home {
+
+  .hero {
+    background-image: url(https://photos-5.dropbox.com/t/2/AAB78bvAsiLhfw3-zhj1W4iTyc53my3kSTlnbGCWMBGIDQ/12/5789821/jpeg/32x32/1/1442289600/0/2/hero.jpg/CP2w4QIgASACIAMgBCAFIAYgBygCKAc/1qfGpbU8NPTJMhEPQ_fnmkdl-KXkO8oKyUeKVHB4CN8?size=1024x768&size_mode=2);
+    height: 500px;
+    margin-top: 0;
+    z-index: -1;
+    background-size: cover;
+    .hero-text {
+      text-align: right;
+      padding: 50px 30px;
+    }
+  }
+}
 #detail {
   color: #111111;
   .info {
-    width: 250px;
-    float: right;
-    clear: left;
+
+    .item {
+      background-color: #F2C40D;
+      font-size: 24px;
+    }
+    .price{
+      background-color: #BFF6EB;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .description, .dimensions {
+      background-color: #EEEEEE;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .ruby-insert {
+      line-height: 1.6em;
+    }
   }
-  img {
-    width: 550px;
-    float: left;
+  .image {
+    img {
+      width: 90%;
+    }
   }
 }
